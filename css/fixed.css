@@ -72,3 +72,14 @@
             transform: translateZ(0);
     will-change: transform; */
   }
+  @media (min-width: 375px) and (max-width: 767px){
+
+    .landing{
+      height: 448px;
+    }
+
+    .home-inner{
+      height: 11%;
+      background-position: unset;
+    }
+  }

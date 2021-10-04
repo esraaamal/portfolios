@@ -45,16 +45,16 @@ body {
           height: 30px;
       }
       .social a:nth-child(1) i{
-          color: #0e8df1;
+        color: white;
       }
       .social a:nth-child(2) i{
           color: white;
       }
       .social a:nth-child(3) i{
-          color: #0077b5;
+        color: white;
       }
       .social a:nth-child(4) i{
-          color: #f26522;
+        color: white;
           -webkit-background-clip: text;
       }
 
@@ -83,6 +83,8 @@ body {
 .navbar-nav li {
   padding-left: 16px;
 }
+
+/* /////glow btn///// */
 #colorNav{
   position: relative;
   padding: 13px 24px;
@@ -729,3 +731,138 @@ footer{
     font-size: 14px;
     color: white;
 }
+
+.product-image img{
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+ @media (min-width: 375px) and (max-width: 767px){
+  body{
+    padding: 0;
+    overflow-x: hidden;
+  }
+ 
+  .caption{
+    position:absolute;
+    color: #f9fafb;
+    top: 5%;
+    left: 2%;
+
+  }
+  .caption p{
+    font-size: 1rem;
+    margin-left: -16%;
+  }
+  .landing2{
+    height: 300px;
+  }
+  /* .home-wrap{
+    
+  } */
+  .social{
+    display: none;
+  }
+  .navbar{
+    display: none;
+  }
+ 
+  
+ a.logosign{
+   color: #faf4f4;
+   font-size: 2rem;
+    margin-left: -4%;
+    font-weight: 900;
+ }
+  .about{
+    grid-template-columns: 1fr;
+    margin-top: -80%;
+
+  }
+  .leftAbout {
+    width: 80%;
+  
+  }
+  .aboutName::after {
+
+    width: 37%;
+  }
+  .skillQuali{
+    grid-template-columns: 1fr;
+  }
+  .skillQuali h6{
+    padding: 1% 14%;
+    transform: none;
+  }
+  .leftSkill{
+    padding-left: 3%;
+  }
+  .containSkill {
+    width: 91%;
+    margin-top: -3%;
+    margin-bottom: 11%;}
+    .container2 {
+      box-shadow: 0 -1px 13px 3px grey;
+      height: 33%;
+      width: 93%;
+      margin-bottom: 10%;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+    
+    .product-image{
+      width:100%;
+      float: none;
+      border-top: 5px solid;
+    border-left: 5px solid;
+    border-right: 5px solid;
+    overflow: unset;
+    }
+
+.product-image img {
+    width: 68%;
+    height: 90%;
+}
+.product-details {
+  float: none;
+  text-align: center;
+  padding: 16px;
+  width: 100%;
+  overflow: unset;
+}
+
+.container2{
+  padding-bottom: 18%;
+}
+
+.control {
+  position: absolute;
+  bottom: -14%;
+  left: -2.2%;
+  width: 100%;
+
+}
+.project{
+  height: auto;
+}
+
+#contactMe .formcont {
+  display: grid;
+  grid-template-columns: 1fr;}
+
+  #contactMe .aboutName::after{
+    width: 32.5%;
+  }
+
+  .rightCont .form__group {
+    
+    grid-template-columns: 1fr;}
+
+
+
+
+ }
