@@ -614,7 +614,9 @@ font-family: 'EB Garamond', serif;
 
 .btn:hover .shopping-cart {transform: translateX(0%);}
 
-
+corn{
+  font-size: 20px;
+}
 
 .product-image {
 	transition: all 0.3s ease-out;
