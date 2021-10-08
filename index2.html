@@ -5,12 +5,90 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+body{
+display: flex;
+justify-content: center;
+align-items: center;
+background: rgb(253, 198, 198);
+min-height: 100vh;
+}
+.EsraaCard{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: white;
+    transform-style: preserve-3d;
+    transform: perspective(100px);
+    box-shadow: 10px 20px 40px rgba(0, 0, 0, 0.25);
+}
+.EsraaCard .details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.EsraaCard .details .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.EsraaCard .details .content h2{
+    text-align: center;
+    font-weight: 700;
+    line-height: 1em;
+}
+.EsraaCard .details .content h2 span{
+    color: #e21212;
+    font-size: 0.8em;
+}
+.EsraaCard .details .content .social-icons{
+position: relative;
+display: flex;
+}
+.EsraaCard .details .content .social-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #333;
+    color: #fff;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+}
+</style>
 </head>
 <body>
-    <div style="background-color: blue;height: 400px
-    ;width: 50%;">
-<hr style="position: absolute;top: 100px;height: 10px;width:30%;">
-<p style="background-color: red;width: 100px;" >Sign in</p>
+    <div class="EsraaCard">
+<div class="imgBox"></div>
+<div class="details"> 
+<div class="content">
+<h2>
+    Someone Famous<br>
+    <span>Web Developer</span>
+</h2>
+<div class="social-icons">
+    <a href="#"><li>Hi one</li></a>
+    <a href="#"><li>Hi two</li></a>
+
+</div>
+</div>
+</div>
     </div>
+
 </body>
 </html>

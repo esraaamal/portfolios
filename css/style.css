@@ -10,6 +10,10 @@ body {
   font-family: "Lato", sans-serif;
   overflow-x: hidden;
 }
+#cvButton a{
+color: white;
+text-decoration: none;
+}
 /* ///////social part////////// */
 .social{
   position: fixed;
@@ -57,6 +61,7 @@ body {
         color: white;
           -webkit-background-clip: text;
       }
+      
 
       /* //////////////////nav bar part////////////////////// */
 .navbar {
@@ -165,7 +170,7 @@ body {
 .home-inner {
   position: absolute;
   z-index: 1;
-  background: url("/images/pexels-eberhard-grossgasteiger-2088203.jpg");
+  background: url("../images/pexels-eberhard-grossgasteiger-2088203.jpg");
 }
 .caption {
  /* position: fixed; */
@@ -520,12 +525,14 @@ font-family: 'EB Garamond', serif;
     margin-top: 8px;
 	
 }
+
+/* /////////////btn////////////*/
 .control{
 	position: absolute;
 	bottom: 2%;
 	left: 12.8%;
-    width:100%;
-    /* display:none; */
+  width:100%;
+  /* display:none; */
 	
 }
 .btn {
@@ -737,8 +744,8 @@ footer{
 }
 
 /* 
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
+  ##Device = IPhone6/7/8
+  ##Screen = B/w 375px to 767px
 */
 
  @media (min-width: 375px) and (max-width: 767px){
@@ -866,3 +873,56 @@ footer{
 
 
  }
+ @media (min-width: 634px) and (max-width: 768px) {
+   body{
+     overflow-x: hidden;
+   }
+   #contactMe .formcont {
+    grid-template-columns: 1fr;}
+  .navbar-nav {
+    margin-left: 0%;}
+  .navbar-nav li {
+    padding-left: 16px;
+    font-size: 11px;}
+    .social {
+      transform: translate(-336px,0);  }
+  #project {
+    padding: 0%;
+}
+.project{
+  height: unset;
+
+}
+
+.product-details {
+ 
+  padding: 42px;
+}
+
+
+
+.product-details {
+
+  width: 55%;}
+  .rightAbout {
+    padding-top: 34%;
+    margin-left: -31%;
+}
+.navbar-nav li {
+  padding-left: 6px;
+  font-size: 9px;
+}
+.caption {
+  top: 50%;
+  left: 1%;}
+  .navbar-brand {
+    
+    font-size: 1rem;}
+    .project {
+     
+      justify-content: center;
+      padding: 1%;}
+      .container2 {
+       width: 71%;
+        margin: 3%;}
+}
