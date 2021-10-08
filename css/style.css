@@ -627,7 +627,7 @@ corn{
 	float: right;
 	width: 45%;
 	display: inline-block;
-  background: url("/images/portfoliosproject.PNG");
+  background: url("../images/portfoliosproject.PNG");
   background-position: center;
   background-size: cover;
 }
